@@ -1,0 +1,46 @@
+<table>
+  <thead>
+    <tr>
+
+      <th class='sort' id='identification'>
+        <a type='submit' href='#/sort/identification'>Identification</a>
+      </th>
+
+      <th class='sort' id='firstName'>
+        <a type='submit' href='#/sort/firstName'>First Name</a>
+      </th>
+
+      <th class='sort' id='lastName'>
+        <a type='submit' href='#/sort/lastName'>Last Name</a>
+      </th>
+
+      <th class='sort' id='email' >
+        <a type='submit' href='#/sort/email'>Email</a>
+      </th>
+
+      <th class='sort' id='position'>
+        <a type='submit' href='#/sort/position'>Position</a>
+      </th>
+
+      <th class='sort' id='department'>
+        <a type='submit' href='#/sort/department'>Department</a>
+      </th>
+
+    </tr>
+  </thead>
+
+  <tbody>
+    {{#each allDocs}}
+
+    <tr>
+      {{> singleRecord}}
+    </tr>
+
+
+    {{else}}
+    <tr>No data found!!!</tr>
+    {{/each}}
+
+  </tbody>
+
+</table>

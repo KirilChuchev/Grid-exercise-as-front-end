@@ -1,0 +1,1 @@
+This app use Firebase Database as BaaS.

@@ -1,0 +1,92 @@
+<html>
+
+<head>
+  <!-- <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+  <!-- <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" /> -->
+
+  <!-- <link rel="stylesheet" href="./styles/common.css" />
+  <link rel="stylesheet" href="./styles/home.css" />
+  <link rel="stylesheet" href="./styles/login.css" />
+  <link rel="stylesheet" href="./styles/dashboard.css" />
+  <link rel="stylesheet" href="./styles/ideas.css" /> -->
+  <link rel="stylesheet" href="./public/styles/style.css">
+</head>
+
+<body>
+
+  <div id='main'>
+    <!--
+        Sammy operational html element point.
+    -->
+  </div>
+
+  <!-- Node Modules -->
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+
+  <!--
+        Скрипта по-долу се ползва в случай, че не сработи JQuery от node_modules
+    -->
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+
+  <script src="./node_modules/handlebars/dist/handlebars.js"></script>
+  <script src="./node_modules/sammy/lib/sammy.js"></script>
+  <script src="./node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
+  <!-- <script src="./node_modules/popper.js/dist/umd/popper.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.3.3/umd/popper.min.js"></script>
+
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <!-- ./Node Modules -->
+
+  <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script defer src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyADhgUC0u7NVf1Fg0UaF0QSF7mEjsx_5-o",
+      authDomain: "grid-data-deb8a.firebaseapp.com",
+      databaseURL: "https://grid-data-deb8a.firebaseio.com",
+      projectId: "grid-data-deb8a",
+      storageBucket: "grid-data-deb8a.appspot.com",
+      messagingSenderId: "872074260395",
+      appId: "1:872074260395:web:7a62a4eee6546008f3ecee"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script type='module' src="./scripts/app.js"></script>
+
+
+
+</body>
+
+<!-- Libraries -->
+<!-- <script src="./node_modules/jquery/dist/jquery.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="node_modules/handlebars/dist/handlebars.js"></script>
+<script src="node_modules/sammy/lib/sammy.js"></script>
+<script src="./node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
+<script src="app.js"></script> -->
+
+</html>
